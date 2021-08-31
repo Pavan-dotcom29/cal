@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        img {
+          width: 100%;
+        }
+  
+        .container {
+          width: 400px;
+        }
+  
+        @keyframes leftToRight {
+          from {
+            transform: translateX(0);
+          }
+  
+          to {
+            transform: translateX(200px);
+          }
+        }
+  
+        .container {
+          animation-name: magic;
+          animation-duration: 5s;
+        }
+  
+  
+         section{ 
+          animation-name: leftToRight;
+          animation-duration: 7s;
+        }
+   
+  
+  
+        @keyframes magic {
+            0% {transform: translate(0);}
+            10% {transform: rotateY(180deg);}
+            20% {transform: rotateY(-180deg) scale(2);}
+            30% {transform: rotateY(180deg); transition-duration: 10s;}
+            35% {transform: rotateY(-180deg);}
+            40% {transform: scale(2) rotateY(180deg);}
+            80% {transform: rotateY(-180deg) scale(2);}
+            100% {transform: scale(3);}
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <img src="birds.jpg.jpg" alt="" width="300px" height="400px">
+      </div>
+  
+      <section>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          voluptates laudantium eaque nulla rem voluptatum nihil cum tenetur
+          labore sequi atque consequuntur, aliquam, veniam aut, voluptas
+          perferendis. At, corrupti quisquam.
+        </p>
+      </section>
+    </body>
+  </html>
+  

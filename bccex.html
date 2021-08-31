@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+ 
+header{
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 110px;
+}
+header::first-letter{
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+}
+ul{
+    margin: 3px 0px;
+    padding:0px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+ul li{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    font-size: 21px;
+    display: inline;
+    padding: 15px;
+}
+ul li::after{
+    content: "";
+    border-right: 1px solid white;
+    margin-left: 12px;
+    height: 1px;
+}
+nav a{
+    background-color: black;
+    padding: 0px 10px;
+}
+
+.box-1 img{
+    position: relative;
+    height: 400px;
+    width: 600px;
+}
+.sports::before{
+    content: "";
+    display: inline-block;
+    margin-right: .5rem;
+    border-left: 5px solid orange;
+    height: 23px;
+    width: 0;
+    padding: 0;
+}
+.sports:hover{
+    text-decoration: underline;
+    clear:right;
+}
+
+/* img:hover{
+    border-radius: 20px ;
+    height: 450px;
+    width: 650px;
+} */
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    bottom: 0px;
+}
+.my{
+    content: "";
+    display: inline-block;
+    border-bottom: 5px solid orange;
+}
+.my-r:hover{
+    text-decoration: underline;
+}
+.my-r::before{
+    content: "";
+    font-size: large;
+    display:inline-block;
+    margin-right: .5rem;
+    border-left: 5px solid red;
+    height: 20px;
+    width: 0px;
+    padding: 0px;
+}
+.work::before{
+    content: "";
+    display: inline-block;
+    margin-right: .5rem;
+    border-left: 5px solid rgba(0, 4, 255, 0.521);
+    height: 23px;
+    width: 0px;
+    padding: 0px;
+
+}
+.work:hover{
+    text-decoration: underline;
+}
+.class1{
+    content: "";
+    display: inline-block;
+    border-bottom: 5px solid orange;
+}
+.class2{
+    content: "";
+    display: inline-block;
+    border-bottom: 5px solid rgb(255, 174, 0);
+}
+.class1::selection{
+    color: white;
+    background-color: rebeccapurple;
+}
+.class2::selection{
+    color: white;
+    background-color: teal;
+}
+h4{
+position: absolute;
+bottom: 190px;
+width: 600px;
+font-size: larger;
+color: white;
+padding: 0px 10px 0px;
+}
+.container div{ 
+    display:inline-flex;
+    border: 1px solid black;
+    padding: 10px;
+}
+.container-2 img{
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 10px;
+    top: 165px;
+    left: 650px;
+    border: 1px solid black;
+    height: 200px;
+    width: 400px;
+}
+.container-2 h5{
+    position: absolute;
+    top: 300px;
+    left: 650px;
+    font-size:15px;
+    padding: 9px;
+    color: blue;
+}
+.box-3 img{
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    height: 180px;
+    width: 410px;
+    top:400px;
+    left: 650px;
+    border: 1px solid black;
+    padding: 7px;
+    margin-top: 0px;
+}
+.container-3 img{
+    position: absolute;
+    height: 410px;
+    width: 400px;
+    top: 167px;
+    right: 10px;
+    border: 1px solid black;
+    padding: 8px;
+    margin-left: 5px;
+}
+.container-3 h6{
+    position: absolute;
+    display: block;
+    bottom: 150px;
+    right: 50px;
+    color: white;
+    font-size: medium
+</style>
+<body>
+
+    
+    <header>BBC</header>
+ <nav>
+ <ul>
+ <li><a href="" id="bbc"></a> BBC</li> 
+ <li><a href="" class="my-signin"></a>Sign in</li>
+ <li><a href=""></a> Home</li>
+ <li><a href="" class="my-news" ></a> News</li>
+ <li><a href="" class="my-sports"></a> Sports</li>
+ <li><a href="" class="my-reels" ></a> Reel</li>
+ <li><a href="" class="my-worklife" ></a> WorkLife</li>
+ <li><a href="" class="my-travel" ></a> Travel</li>
+ <li><a href=""></a> Future</li>
+ <li><a href=""></a> Culture</li>
+ <select name="More" id="More">
+ <option value="">Music</option>
+ <option value="">TV</option>
+ <option value="">Weather</option>
+ <option value="">Sound</option>
+ </select> 
+ </ul>
+ </nav>
+ <div class="container">
+
+ <div class="box-1">
+<img src="birds.jpg.jpg" alt="" width="400px" height="400px">
+<h4>The resurgent Taliban have taken more territory in Afghanistan in the last two months than at any time since they were ousted from power in 2001.</h4>
+</div>
+</div>
+<div class="container-2">
+<div class="box-2"> 
+ <img src="birds.jpg.jpg" alt="" width="400px" height="400px">
+ <h5>A public inquiry into the assassination of Maltese investigative</h5>
+</div>
+</div>
+
+<div class="box-3">
+ <img src="nature.jpg" alt="" width="400px" height="400px">
+</div>
+<div class="container-3">
+ <div class="box-4">
+ <img src="nature.jpg" alt="" height="400px" width="400px">
+ <h6>Tokyo 2020:India men's hockey star Mandeep Singh</h6>
+ </div>
+</div>
+
+
+
+
+ <h1 class="sports">Sports</h1>
+ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium perspiciatis necessitatibus adipisci distinctio et quo eveniet doloribus quasi odio possimus provident corrupti recusandae a perferendis sed modi, consequatur libero? Voluptatibus.
+
+<div>
+<p class="my">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+ Quis quasi, obcaecati sequi aliquid quas ducimus sit! Quia molestias eum id,
+ obcaecati odit expedita deserunt rerum dolores eveniet sint, quaerat labore.</p>
+</div> 
+<hr>
+<div>
+ <h2 class="my-r">Reels</h2>
+ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim accusantium quia illo quibusdam obcaecati aspernatur modi sed, nam iste. Saepe illum suscipit voluptates veritatis. Modi minus molestiae facilis molestias!
+</div>
+<p class="class1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+ Impedit et voluptas quos quod, vitae adipisci ratione assumenda nostrum cumque dolor, 
+ nulla debitis quibusdam nam blanditiis consectetur reiciendis cupiditate accusantium repellendus.</p>
+<hr>
+<div>
+ <h3 class="work">WorkLife</h3>
+ <p class="class2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam aperiam id reiciendis eaque
+ neque magnam corrupti rem cupiditate itaque nulla. Doloribus, alias debitis
+ quia ex consequuntur dolorum? Modi, vitae fuga!</p>
+</div> 
+</body>
+<footer>Copyright &copy; 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</footer>
+</html>
+    
+</body>
+</html>
